@@ -1,0 +1,12 @@
+{
+    "name": "root/deploy",
+    "require": {
+        "deployer/deployer": "^3.0"
+    },
+    "authors": [
+        {
+            "name": "barantaran",
+            "email": "yourchev@gmail.com"
+        }
+    ]
+}
