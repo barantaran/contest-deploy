@@ -6,3 +6,4 @@ dev:
     branch:        master
     mysql_user:    user
     mysql_pass:    pass
+    mysql_host:    host
