@@ -18,6 +18,7 @@ serverList('servers.yml');
 set('repository', 'https://github.com/barantaran/contest-server.git');
 set('shared_dirs', [
     'public/files',
+    'config',
 ]);
 
 task('deploy', [
