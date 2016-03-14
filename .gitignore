@@ -1,4 +1,8 @@
 /vendor/
+/releases/
+
+current
+
 *.swp
 *.log
 *.*~

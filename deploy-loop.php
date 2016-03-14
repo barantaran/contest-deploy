@@ -24,8 +24,9 @@ $handler->startLoggerInfo($logentriesToken);
 
 $handler->masterMerge(
     function ($data) {
-        shell_exec("/home/www/contest/vendor/deployer/deployer/bin/dep deploy dev");
-        return true;
+        putenv("HOME=/home/barantaran");
+        shell_exec("/home/www/contest/vendor/deployer/deployer/bin/dep deploy dev > deploy.log 2>deploy.log &");
+        echo "deploying";
     }
 );
 
