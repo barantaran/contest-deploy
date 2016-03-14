@@ -16,6 +16,19 @@ require 'recipe/composer.php';
 serverList('servers.yml');
 
 set('repository', 'https://github.com/barantaran/contest-server.git');
+set('shared_dirs', [
+    'public/files',
+]);
+
+task('deploy', [
+    'deploy:prepare',
+    'deploy:release',
+    'deploy:update_code',
+    'deploy:shared',
+    'deploy:vendors',
+    'deploy:symlink',
+    'cleanup',
+])->desc('Deploy project');
 
 task(
     'deploy:mysql', function () {
