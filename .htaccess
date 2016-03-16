@@ -1,4 +1,5 @@
 RewriteEngine on
 RewriteCond %{REQUEST_URI} ^/deploy$
 RewriteRule ^deploy$ /deploy-loop.php [L]
+RewriteCond %{REQUEST_URI} !^/deploy-loop
 RewriteRule (.*) /current/$1 [L]
