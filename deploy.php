@@ -35,16 +35,3 @@ task(
     'cleanup',
     ]
 )->desc('Deploy project');
-
-task(
-    'deploy:mysql', function () {
-        run(
-            "mysql -u" . env("mysql_user")
-            . " -h" . env("mysql_host")
-            . " -p" . env("mysql_pass")
-            ." contest < " . env("deploy_path") . "/current/db/migrations/init.sql"
-        );
-    }
-)->desc("Deploying SQL Scheme");
-
-after('deploy', 'deploy:mysql');
