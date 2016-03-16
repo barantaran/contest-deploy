@@ -20,6 +20,7 @@ set(
     'shared_dirs', [
     'public/files',
     'config',
+    'log'
     ]
 );
 
