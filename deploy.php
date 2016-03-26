@@ -25,6 +25,12 @@ set(
 );
 
 task(
+    'migrate', function () {
+        shell_exec("current/vendor/robmorgan/phinx/bin/phinx migrate -c phinx.yml");
+    }
+);
+
+task(
     'deploy', [
     'deploy:prepare',
     'deploy:release',
@@ -33,5 +39,6 @@ task(
     'deploy:vendors',
     'deploy:symlink',
     'cleanup',
+    'migrate'
     ]
 )->desc('Deploy project');

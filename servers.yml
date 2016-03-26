@@ -4,6 +4,3 @@ dev:
     stage:         dev
     deploy_path:   "/var/www"
     branch:        master
-    mysql_user:    user
-    mysql_pass:    pass
-    mysql_host:    host
