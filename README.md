@@ -3,7 +3,7 @@
 
 Used to deploy [Contest web app](https://github.com/bt-contest) with [deployerphp](http://deployer.org/).
 
-Depend on [simple-helpers/php-github-webhook](https://github.com/simple-helpers/php-github-webhook.git) catching github webhooks.
+Depends on [simple-helpers/php-github-webhook](https://github.com/simple-helpers/php-github-webhook.git) catching github webhooks.
 
 To install contest application use:
 ```
